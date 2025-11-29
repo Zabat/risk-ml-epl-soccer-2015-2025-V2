@@ -1,0 +1,29 @@
+# EPL Betting Model Configuration
+# ================================
+
+# Betting criteria
+betting:
+  min_prob: 0.68          # Minimum predicted probability to bet
+  min_value: 0.05         # Minimum expected value (prob * odds - 1)
+  min_odds: 1.15          # Minimum acceptable odds
+  max_odds: 1.55          # Maximum acceptable odds
+  min_elo_diff: 250       # Minimum Elo advantage for home team
+
+# Money management
+money_management:
+  kelly_fraction: 0.25    # Fraction of Kelly criterion (0.25 = quarter Kelly)
+  max_bet: 0.06           # Maximum bet as fraction of bankroll
+  min_bet: 0.005          # Minimum bet threshold
+  initial_bankroll: 1000  # Starting capital
+  stop_loss: 0.10         # Stop if bankroll drops below this fraction
+
+# Model settings
+model:
+  train_window: 300       # Initial training window (number of matches)
+  retrain_every: 50       # Retrain model every N matches
+  random_state: 42        # Random seed for reproducibility
+
+# Risk analysis
+risk:
+  monte_carlo_sims: 1000  # Number of Monte Carlo simulations
+  var_confidence: 0.95    # Confidence level for VaR/CVaR

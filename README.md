@@ -312,7 +312,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-- **GitHub**: [@yourusername](https://github.com/yourusername)
+- **GitHub**: [@Zabat](https://github.com/Zabat)
 - **Issues**: [Report a bug](https://github.com/yourusername/epl-betting-model/issues)
 
 ## 📈 Future Improvements
